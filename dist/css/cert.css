@@ -1,0 +1,83 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.7;
+	color: #777;
+	padding: 30px;
+}
+
+.heading-secondary{
+
+	font-size: 3.5rem;
+	font-weight: 700;
+	display: inline-block;
+	background-image: linear-gradient(to right, #7ed567, #28b485);
+	-webkit-background-clip:text;
+	color: transparent;
+	letter-spacing: .2rem;
+	transition: all .2s;
+}
+
+.heading-secondary:hover{
+	transform: skewY(2deg) skewX(15deg) scale(1.1);
+	text-shadow: .5rem 1rem 2rem rgba(#000,.2);
+}
+
+.u-center-text{
+	text-align: center;
+}
+
+.u-margin-bottom-b{
+	margin-bottom: 4rem;
+}
+.section-certificate{
+	background-color:#f7f7f7 ;
+	padding: 25rem 0 50rem 0;
+}
+
+
+.card{
+	perspective: 150rem;
+	-moz-perspective: 150rem;
+	position: relative;
+	height: 50rem;
+}
+
+.card__side{
+	height: 50rem;
+	transition: all .8s ease;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	backface-visibility: hidden;
+	border-radius: 3px;
+	box-shadow: 0 1.5rem 4rem rgba(#777,.15);
+}
+
+.card:hover .card__side--front{
+	transform: rotateY(180deg);
+}
+
+.card:hover .card__side--back{
+	transform: rotateY(0);
+}
+
+.card__side--front{
+	background-color: #fff;
+}
+
+.card__side--back{
+	background-color: #ffb900 ;
+	transform: rotateY(180deg);
+}
+
+.card__side--back-1{
+	background-image: linear-gradient(to-right-bottom, #ffb900 , #ff7730);
+}

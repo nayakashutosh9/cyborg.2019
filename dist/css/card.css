@@ -1,0 +1,136 @@
+.card_a{
+    perspective: 1500px;
+    -moz-perspective: 1500px;
+    position: relative;
+    height: 19rem;
+}
+
+.card_s{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    height: 19rem;
+    transition: all .8s ease;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.card_s_f{
+    background-color: #fff;
+}
+
+.card_s_b{
+    transform: rotateY(180deg);
+}
+
+.grad{
+    background-color: inherit; 
+}
+
+.card_a:hover .card_s_f {
+    transform: rotateY(-180deg);
+}
+
+.card_a:hover .card_s_b {
+    transform: rotateY(0deg);
+}
+
+.btn:link,
+.btn:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+    font-size: 20px;
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(#000,0.2);
+}
+
+.btn:hover::after{
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(#000,0.2);
+}
+
+.btn--white{
+    background-color: #fff;
+    color: #777;
+}
+
+.btn--white::after{
+    background-color: #fff;
+}
+
+.btn::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn--animated{
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+
+.btn-text:link,
+.btn-text:visited{
+    font-size: 2px;
+    color: #55c57a;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid #55c57a;
+    padding: 3px;
+    transition: all .2s;
+}
+
+.btn-text:hover{
+    background-color: #55c57a;
+    color: #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,.15);
+    transform: translateY(-2px);
+}
+
+.btn-text:active{
+    box-shadow: 0 5px 10px rgba(0,0,0, .15);
+    transform: translateY(0);
+}
+
+.card_cta{
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    transform: translate(-50%-50%);
+}
+
+.card_product{
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.card_desp{
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 100;
+}
+
