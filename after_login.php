@@ -1,3 +1,18 @@
+<?php
+	session_start();
+	if (!isset($_SESSION['id']) && !isset($_SESSION['username']))
+	{
+		echo "Error connecting to the profile page";
+		#header("Location: index.html");
+	}
+	// include 'db.php';
+	
+	// if (isset($_POST['username'])&&isset($_POST['password']))
+	// {
+	// 	echo ($_POST['username']);
+	// }
+?>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -30,7 +45,7 @@
 		</div>
 
 		<ul class="nav navbar-nav navbar-right">
-
+			<li class="nav-item text-white"><a href="logout.php">LOGOUT</a></li>
 		
 
 		</ul>
@@ -44,6 +59,7 @@
 
 </div>
 <br>
+<div class="well container text-center"><h4>Hello..<?php echo $_SESSION['username']; ?></h4></div>
 <div class="container">
                 <!-- ============================================================== -->
                 <!-- Sales Cards  -->

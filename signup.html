@@ -37,6 +37,7 @@
 		
 
 		
+
 		</ul>
 
 	</div>
@@ -53,6 +54,8 @@
 
 
 
+
+
 <div class="container-fluid">
 
 	<nav class="navbar">
@@ -64,26 +67,36 @@
 	</nav>
 
 </div>
-
-<div class="container-fluid">
-
-	<nav class="navbar">
-
-		<div class="container-fluid">
-
-		</div>
-
-	</nav>
-
-</div>
-
-
 
 <div class="container">
 
-  <form class="form-horizontal" action="/action_page.php">
+  <form class="form-horizontal" action="register.php" method="post">
 
     <div class="form-group">
+
+      <label class="control-label col-sm-2" for="email" style="color:white">Fist Name:</label>
+
+      <div class="col-sm-10">
+
+        <input type="text" class="form-control" id="email" placeholder="Enter First Name" name="first_name">
+
+      </div>
+
+    </div>
+
+	<div class="form-group">
+
+      <label class="control-label col-sm-2" for="email" style="color:white">Last Name:</label>
+
+      <div class="col-sm-10">
+
+        <input type="name" class="form-control" id="name" placeholder="Enter Last Name" name="last_name">
+
+      </div>
+
+    </div>
+
+	<div class="form-group">
 
       <label class="control-label col-sm-2" for="email" style="color:white">Email:</label>
 
@@ -97,11 +110,23 @@
 
     <div class="form-group">
 
-      <label class="control-label col-sm-2" for="pwd" style="color:white">Password:</label>
+      <label class="control-label col-sm-2" for="email" style="color:white">Password:</label>
+
+      <div class="col-sm-10">
+
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password">
+
+      </div>
+
+    </div>
+
+    <div class="form-group">
+
+      <label class="control-label col-sm-2" for="pwd" style="color:white">Confirm Password:</label>
 
       <div class="col-sm-10">          
 
-        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+        <input type="password" class="form-control" id="pwd" placeholder="Enter confirmed password" name="r_password">
 
       </div>
 
@@ -146,9 +171,7 @@
 
 </div>
 <br>
-<br><br><br><br><br>
-
-
+<br>
 <footer>
 		<div class="container-fluid" style="background-color:black">
 
