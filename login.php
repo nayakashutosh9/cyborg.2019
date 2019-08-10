@@ -15,10 +15,10 @@ include 'db.php';
 			$db_password = $row['password'];
 			$_SESSION['id'] = $row['id'];
 			$_SESSION['email']=$row['email'];
+			$_SESSION['first_name']=$row['first_name'];
 
 			if ($password==$db_password)
 			{
-				$_SESSION['first_name']=$username;
 				$_SESSION['password']=$password;
 				header('Location: after_login.php');
 			}
